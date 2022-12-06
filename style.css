@@ -40,7 +40,7 @@ header nav {
 }
 
 header nav:last-child {
-	width: 60%;
+	width: 80%;
 }
 
 header nav ul {
@@ -54,7 +54,7 @@ header nav ul {
 
 nav ul li {
 	font-weight: 500;
-	font-size: 1.12em;
+	font-size: min(1.12em, 3.2vw);
 }
 
 .banner {
@@ -65,13 +65,13 @@ nav ul li {
 }
 
 .banner h1 {
-	font-size: 2.5em;
+	font-size: 4vw;
 	font-weight: 800;
 	color: #f7f7f7;
 }
 
 .banner img {
-	width: 40%;
+	width: 45%;
 }
 
 main {
@@ -138,9 +138,14 @@ footer {
 }
 
 footer nav {
-	width: 100%;
 	display: flex;
 	justify-content: center;
+	align-items: center;
+}
+
+nav.social-media {
+	width: 25%;
+	justify-content: space-between;
 	align-items: center;
 }
 
@@ -148,12 +153,16 @@ footer nav img {
 	width: 100%;
 }
 
-footer nav ul {
-	width: 40%;
+footer nav.links {
+	width: max(35%, 15vw);
+}
+
+footer nav.links ul {
+	width: 100%;
 	display: flex;
 	justify-content: space-between;
 }
 
-footer nav ul li {
-	margin: 0 5px;
+nav.links a {
+	font-size: min(1em, 3vw);
 }
